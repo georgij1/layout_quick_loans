@@ -1,14 +1,153 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="image_logo"></div>
+        <div class="icons">
+            <div class="search_icon"></div>
+            <div class="like_icon">
+                <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="7.10281" cy="8.04763" rx="6.5657" ry="8.04763" fill="#E6C8B4"/>
+                </svg>
+                <div class="text_click_like_icon"></div>
+            </div>
+            <div class="cart_icon"></div>
+        </div>
+        <div class="input_icon_input">
+            <input class="input_icon" placeholder="Введите текст для поиска">
+        </div>
+        <div class="links">
+            <a href="#">
+                <div class="link_1">Каталог</div>
+            </a>
+            <a href="#">
+                <div class="link_2">Акции</div>
+            </a>
+            <a href="#">
+                <div class="link_3">Доставка</div>
+            </a>
+            <a href="#footer">
+                <div class="link_4">Контакты</div>
+            </a>
+        </div>
+        <div class="text_about_collection">
+            Весна/Лето
+            2019
+        </div>
+        <div class="collection_text">
+            Коллекция
+        </div>
+    </header>
+    <div class="content">
+        <div class="index_watch"></div>
+        <div class="description_flex">
+            <div class="description_watch">
+                Швейцарские часы в наличии в Москве и с доставкой по всему миру
+            </div>
+            <div class="look_catalog">
+                Смотреть каталог
+            </div>
+            <div class="cost">
+                <p class="units">22 000</p>
+                <div class="image_currency"></div>
+            </div>
+            <div class="diameter">28 мм диаметр</div>
+        </div>
+    </div>
+    <div class="popular_project">
+        Популярные модели
+    </div>
+    <div class="cards">
+        <div class="card">
+            <div class="name_product">RADO</div>
+            <div class="prices">
+                <div class="price">65 300</div>
+                <div class="image_currency image_currency_card"></div>
+            </div>
+            <div class="background_product">
+                <div class="product_image"></div>
+            </div>
+            <div class="button_more_detailed">Подробнее</div>
+        </div>
 
+        <div class="card">
+            <div class="name_product">BVLGARI</div>
+            <div class="prices">
+                <div class="price">81 700</div>
+                <div class="image_currency image_currency_card"></div>
+            </div>
+            <div class="background_product">
+                <div class="product_image_card_2"></div>
+            </div>
+            <div class="button_more_detailed">Подробнее</div>
+        </div>
+
+        <div class="card">
+            <div class="name_product">BVLGARI</div>
+            <div class="prices">
+                <div class="price">72 700</div>
+                <div class="image_currency image_currency_card"></div>
+            </div>
+            <div class="background_product">
+                <div class="product_image_card_3"></div>
+            </div>
+            <div class="button_more_detailed">Подробнее</div>
+        </div>
+    </div>
+    <div class="button_look_all">Смотреть всё</div>
+    <div class="flex">
+        <div class="image_finish"></div>
+        <div class="text">
+            <div class="text_finish_name">Подлинное качество</div>
+            <div class="description_text_finish">
+                Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
+            </div>
+        </div>
+    </div>
+    <div class="button_look_all look_catalog_finish">СМОТРЕТЬ КАТАЛОГ</div>
+    <footer id="footer">
+        <div class="logo_footer"></div>
+
+        <div class="number_post">
+            <div class="number">8 (499) 450-47-97</div>
+            <div class="post">info@conquest.watch.ru</div>
+        </div>
+
+        <div class="about_company">о компании</div>
+
+        <div class="text_about_company">
+            <div class="our_shops our_shops_768px">Наши магазины</div>
+            <div class="our_shops our_shops_768px">Вакансии</div>
+            <div class="our_shops our_shops_768px">Сертификаты</div>
+            <div class="our_shops our_shops_768px">Отзывы</div>
+        </div>
+
+        <div class="about_company">покупателям</div>
+
+        <div class="text_about_company grid_catalog">
+            <div class="our_shops">Каталог товаров</div>
+            <div class="our_shops">Как заказать?</div>
+            <div class="our_shops">FAQ</div>
+            <div class="our_shops">Корпоративным клиентам</div>
+        </div>
+
+        <div class="about_company">оплата и доставка</div>
+
+        <div class="text_about_company grid_finish_footer">
+            <div class="our_shops">Способы оплаты</div>
+            <div class="our_shops">Время доставки</div>
+            <div class="our_shops">Гарантии и ремонт</div>
+            <div class="our_shops">Возврат и компенсация</div>
+        </div>
+    </footer>
+<script src="scripts/icons.js"></script>
+<script src="scripts/footer.js"></script>
 </body>
 </html>

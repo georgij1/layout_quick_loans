@@ -1,3 +1,695 @@
 body {
     margin: 0;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_logo {
+    width: 100%;
+    height: 26px;
+    background: url("image/logo/logo_black.png") no-repeat center;
+    background-size: 200px;
+    padding: 31px 0 12px;
+    cursor: pointer;
+}
+
+.icons {
+    position: absolute;
+    right: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.search_icon {
+    width: 16px;
+    height: 19px;
+    background: url("./image/icon/search.png") no-repeat;
+    background-size: 16px;
+    margin: auto;
+}
+
+.like_icon {
+    position: relative;
+    width: 19px;
+    height: 19px;
+    background: url("./image/icon/like.png") no-repeat;
+    background-size: 19px;
+    margin: auto;
+}
+
+.like_icon svg {
+    position: relative;
+    left: 13px;
+    bottom: 8px;
+}
+
+.cart_icon {
+    width: 18px;
+    height: 19px;
+    background: url("./image/icon/cart.png") no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+.text_click_like_icon {
+    position: absolute;
+    left: 16px;
+    bottom: 10px;
+}
+
+.links {
+    display: flex;
+    margin: 50px auto;
+    flex-direction: row;
+    width: 224px;
+    gap: 10px;
+    text-align: center;
+    height: 17px;
+    align-items: center;
+}
+
+.link_1 {
+    width: 53px;
+    height: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555248;
+    margin: auto;
+}
+
+.link_2 {
+    width: 42px;
+    height: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555248;
+    margin: auto;
+}
+
+.link_3 {
+    width: 64px;
+    height: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555248;
+    margin: auto;
+}
+
+.link_4 {
+    width: 65px;
+    height: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555248;
+    margin: auto;
+}
+
+.text_about_collection {
+    width: 100%;
+    height: 122px;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 60px;
+    text-align: center;
+    color: #1B1A17;
+    margin: auto;
+    cursor: default;
+}
+
+.collection_text {
+    width: 100%;
+    height: 59px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: #1B1A17;
+    margin: auto;
+    cursor: default;
+}
+
+.content {
+    width: 320px;
+    margin: auto;
+}
+
+.index_watch {
+    width: 100%;
+    height: 616px;
+    background: url("./image/watch/watch_index.png") center;
+    margin: auto;
+}
+
+.description_watch {
+    width: 259px;
+    height: 115px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 152.34%;
+    color: rgba(27, 26, 23, 0.82);
+    margin: auto;
+}
+
+.look_catalog {
+    width: 205px;
+    background: blue;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin: auto auto 10px;
+    border: 5px solid blue;
+    cursor: pointer;
+}
+
+.look_catalog:hover {
+    background: #FFFFFF;
+    border: 5px solid blue;
+    color: black;
+    cursor: pointer;
+}
+
+.cost {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 50%;
+}
+
+.units {
+    width: max-content;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 0;
+    color: #000000;
+    margin: auto;
+}
+
+.image_currency {
+    background: url("./image/currency/Ruble.png") no-repeat;
+    background-size: 9px;
+    width: 9px;
+    height: 22px;
+    margin: 15px auto;
+}
+
+.diameter {
+    width: 122px;
+    height: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1B1A17;
+    margin: auto;
+}
+
+.popular_project {
+    margin: 87px auto 10px;
+    width: max-content;
+    height: 36px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #1B1A17;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    width: 304px;
+    height: 500px;
+    filter: drop-shadow(17px 4px 17px rgba(0, 0, 0, 0.25));
+    border-radius: 15px;
+    margin: auto;
+}
+
+.card:hover {
+    box-shadow: inset 0 5px 18px rgb(0 0 0 / 25%);
+}
+
+.name_product {
+    width: 47px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: rgba(27, 26, 23, 0.82);
+    padding: 30px 30px 10px;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+.price {
+    width: max-content;
+    height: max-content;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(27, 26, 23, 0.82);
+}
+
+.image_currency_card {
+    margin: 0;
+}
+
+.background_product {
+    position: relative;
+    width: 257px;
+    height: 252px;
+    border-radius: 15px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    background: url("./image/circle.png") no-repeat;
+    background-size: 257px;
+    margin: auto;
+}
+
+.product_image {
+    position: absolute;
+    width: 257px;
+    height: 252px;
+    background: url("./image/watch/watch_card_1.png") no-repeat;
+    filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
+    border-radius: 15px;
+    background-size: 257px;
+}
+
+.product_image_card_2 {
+    position: absolute;
+    width: 277px;
+    height: 310px;
+    background: url("./image/watch/watch_card_2.png") no-repeat;
+    filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
+    border-radius: 15px;
+    background-size: 230px;
+}
+
+.button_more_detailed {
+    width: 205px;
+    background: blue;
+    border-radius: 15px;
+    height: 35px;
+    line-height: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 40px auto 40px;
+    border: blue;
+}
+
+input {
+    outline-color: blue;
+}
+
+.button_more_detailed:hover {
+    background: #FFFFFF;
+    height: 35px;
+    border: 5px solid blue;
+    color: black;
+}
+
+.product_image_card_3 {
+    position: absolute;
+    width: 277px;
+    height: 310px;
+    background: url("./image/watch/watch_card_3.png") no-repeat;
+    filter: drop-shadow(2px 2px 10px rgba(85, 82, 72, 0.23));
+    border-radius: 15px;
+    background-size: 240px;
+}
+
+.button_look_all {
+    width: 296px;
+    height: 49px;
+    background: #0000FF;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 10px auto;
+    border: 5px solid #0000FF;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 45px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.button_look_all:hover {
+    background: #FFFFFF;
+    color: #0000FF;
+    border: 5px solid #0000FF;
+}
+
+.image_finish {
+    width: 296px;
+    height: 389px;
+    background: url("./image/image_finish.png") no-repeat;
+    background-size: 296px;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: auto;
+}
+
+.text_finish_name {
+    width: 296px;
+    height: 83px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #1B1A17;
+    margin: auto;
+}
+
+.description_text_finish {
+    width: 295px;
+    height: 110px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #444240;
+    margin: auto;
+}
+
+.look_catalog_finish {
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    height: max-content;
+    background: #444240;
+}
+
+.logo_footer {
+    width: 130px;
+    height: 34px;
+    background: url("./image/logo/logo_white.png") no-repeat;
+    background-size: 130px;
+    margin: auto;
+}
+
+.number {
+    padding: 20px;
+    width: 150px;
+    height: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: auto;
+}
+
+.post {
+    padding: 20px;
+    width: max-content;
+    height: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: auto;
+}
+
+.about_company {
+    width: 220px;
+    height: 11px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 50px;
+}
+
+.our_shops {
+    width: 167px;
+    height: max-content;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: auto;
+    padding: 10px;
+}
+
+.input_icon_input input {
+    margin: 50px auto;
+    width: 300px;
+    border: 5px solid blue;
+    border-radius: 10px;
+    height: 27px;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: overline;
+}
+
+.icons .search_icon {
+    cursor: pointer;
+}
+
+.icons .like_icon {
+    cursor: pointer;
+}
+
+.icons .cart_icon {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .text_about_collection {
+        width: 322px;
+        height: 55px;
+        margin: auto;
+    }
+
+    .link_1 {
+        font-size: 20px;
+    }
+
+    .link_2 {
+        font-size: 20px;
+    }
+
+    .link_3 {
+        font-size: 20px;
+    }
+
+
+    .link_4 {
+        font-size: 20px;
+    }
+
+    .links {
+        width: 50%;
+        gap: 50px;
+    }
+
+    .collection_text {
+        margin: auto;
+    }
+
+    .content {
+        width: 768px;
+        display: flex;
+    }
+
+    .description_flex {
+        padding: 23% 10%;
+    }
+
+    .description_watch {
+        width: 302px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .look_catalog {
+        width: 300px;
+    }
+
+    .button_look_all {
+        width: 600px;
+    }
+
+    .button_more_detailed {
+        width: 260px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .text {
+        margin: 10px auto;
+    }
+
+    .icons {
+        right: 10px;
+    }
+
+    .search_icon {
+        width: 30px;
+        height: 40px;
+        background-size: 30px;
+    }
+
+    .like_icon {
+        width: 30px;
+        height: 40px;
+        background-size: 30px;
+    }
+
+    .like_icon svg {
+        position: relative;
+        left: 21px;
+        bottom: 4px;
+    }
+
+    .text_click_like_icon {
+        position: absolute;
+        left: 25px;
+        bottom: 27px;
+    }
+
+    .cart_icon {
+        width: 30px;
+        height: 40px;
+        background-size: 30px;
+    }
+
+    .image_logo {
+        background-size: 300px;
+    }
+
+    .logo_footer {
+        width: 100%;
+        height: 100px;
+        background: url("./image/logo/logo_white.png") no-repeat center;
+        background-size: 200px;
+    }
+
+    .number_post {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .number {
+        width: 220px;
+        font-size: 25px;
+    }
+
+    .post {
+        font-size: 25px;
+    }
+
+    .text_about_company {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .our_shops {
+        width: 316px;
+        height: max-content;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.75);
+        margin: auto;
+        padding: 10px;
+    }
+
+    .our_shops_768px {
+        width: revert;
+    }
+
+    .about_company {
+        width: max-content;
+        font-size: 25px;
+    }
+
+    .grid_catalog {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .grid_finish_footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    footer {
+        width: 100%;
+        height: 736px;
+        background: #444240;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 60%;
+        margin: auto;
+    }
+
+    .description_text_finish {
+        height: 150px;
+        font-size: 20px;
+    }
+
+    .button_look_all {
+        width: 900px;
+    }
+
+    .content {
+        margin: auto;
+    }
+}
